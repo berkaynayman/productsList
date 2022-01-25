@@ -10,6 +10,11 @@ const routes = [
         name: "DetailPage",
         path: "/product/detail/:id",
         component : () => import("./views/DetailPage.vue")
+    },
+    {
+        name: "CartPage",
+        path: "/cart",
+        component : () => import("./views/CartPage.vue")
     }  
 ];
 

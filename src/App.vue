@@ -1,9 +1,22 @@
 <template>
-  <div>
-    <router-link to="/">
-      Products
-    </router-link>
+  <div class="container">
+    <ul class="nav justify-content-start bg-light">
+      <li class="nav-item bg-info">
+        <router-link class="nav-link active" aria-current="page" to="/">
+          Products
+        </router-link>
+      </li>
+      <li class="nav-item bg-info">
+        <router-link class="nav-link" to="/cart">
+          Cart
+        </router-link>
+      </li>
+    </ul>
+    
+    
     <router-view />
+
+    <p class="text-end">End aligned text on all viewport sizes.</p>
   </div>
 </template>
 

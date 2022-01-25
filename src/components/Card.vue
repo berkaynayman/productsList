@@ -1,12 +1,12 @@
 <template>
-    <div class="card">
-        <img :src="product.img" alt="Denim Jeans" style="width:100%">
-        <h1>{{product.Id}}</h1>
-        <p class="price">${{product.price}}</p>
-        <p>{{product.Description}}</p>
-        <p><button @click="goToDetails(product.Id)">Product Detail</button>
-           <button>Add to Cart</button></p>
-    </div>
+    <div class="card" style="width: 18rem;">
+      <img :src="product.img" alt="Denim Jeans" style="width:100%">
+      <div class="card-body">
+        <h5 class="card-title">{{product.Id}}</h5>
+        <p class="card-text">{{product.Description}}</p>
+        <a @click="goToDetails(product.Id)" class="btn btn-primary">Go somewhere</a>
+      </div>
+  </div>
 </template>
 
 <script>

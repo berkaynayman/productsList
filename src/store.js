@@ -4,18 +4,24 @@ import {products} from "./assets/products.js"
 const store = createStore({
     state: {
         products,
-        productDetail: []
+        cartList: []
     },
-    mutations: {
-        setProductDetail(state, product){
-            state.productDetail = [...product]
+    getters:{
+        getProductDetail: (state) => (id) => {
+            return state.products.find(p => p.Id === id)
         }
     },
-    actions: {
-        getProductDetail(context, productId){
-            const filterData = context.state.products.filter(item => item.Id == productId )
-            context.commit("setProductDetail", filterData)
-        }   
+    mutations:{
+        updateCartList(state, product){
+            state.cartList.push(product)
+            console.log("mutaions log");
+            console.log(state.cartList);
+        }
+    },
+    actions:{
+        updateCartList (context, product){
+            context.commit('updateCartList', product)
+        }
     }
 });
 
