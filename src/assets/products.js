@@ -1,4 +1,5 @@
-export const products = [
+export const products = 
+[
   {
     "Id": "jenlooper-cactus",
     "Maker": "@jenlooper",
@@ -31,5 +32,125 @@ export const products = [
     "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
     "Ratings": null,
     "price": "20"
+  },
+  {
+    "Id": "jenlooper-survival",
+    "Maker": "jenlooper",
+    "img": "https://user-images.githubusercontent.com/41929050/61567051-13938600-aa33-11e9-8ae7-0b5c19aafab4.jpeg",
+    "Url": "https://www.hackster.io/agent-hawking-1/create-a-compact-survival-kit-38bfdb",
+    "Title": "Create a Compact Survival Kit with LED Track Lighting",
+    "Description": "Use an Altoids tin with Chibitronics sticker LEDs to create a light-up compact that doubles as a survival kit for the young hipster",
+    "Ratings": null,
+    "price": "20"
+  },
+  {
+    "Id": "sailorhg-bubblesortpic",
+    "Maker": "sailorhg",
+    "img": "https://user-images.githubusercontent.com/41929050/61567054-13938600-aa33-11e9-9163-eec98e239b7a.png",
+    "Url": "https://twitter.com/sailorhg/status/1090107740049952770",
+    "Title": "Bubblesort Visualization",
+    "Description": "Visualization of sailor scouts sorted by bubblesort algorithm by their planet\u0027s distance from the sun",
+    "Ratings": null,
+    "price": "20"
+  },
+  {
+    "Id": "sailorhg-corsage",
+    "Maker": "sailorhg",
+    "img": "https://user-images.githubusercontent.com/41929050/61567055-142c1c80-aa33-11e9-96ff-9fbac6413625.png",
+    "Url": "https://twitter.com/sailorhg/status/1090113666911891456",
+    "Title": "Light-up Corsage",
+    "Description": "Light-up corsage I made with my summer intern.",
+    "Ratings": null,
+    "price": "22"
+  },
+  {
+    "Id": "sailorhg-kit",
+    "Maker": "sailorhg",
+    "img": "https://user-images.githubusercontent.com/41929050/61567056-142c1c80-aa33-11e9-8682-10065d338145.png",
+    "Url": "https://twitter.com/sailorhg/status/1090122822007963648",
+    "Title": "Pastel hardware kit",
+    "Description": "Pastel hardware kits complete with custom manufactured pastel alligator clips.",
+    "Ratings": null,
+    "price": "10"
+  },
+  {
+    "Id": "sailorhg-led",
+    "Maker": "sailorhg",
+    "img": "https://user-images.githubusercontent.com/41929050/61567052-13938600-aa33-11e9-9a88-cd842073ba44.jpg",
+    "Url": "https://twitter.com/sailorhg/status/1090117277540745216",
+    "Title": "Heart-shaped LED",
+    "Description": "custom molded heart shaped LED with sprinkles.",
+    "Ratings": null,
+    "price": "13"
+  },
+  {
+    "Id": "selinazawacki-soi-shirt",
+    "Maker": "selinazawacki",
+    "img": "https://user-images.githubusercontent.com/41929050/61567060-142c1c80-aa33-11e9-8188-5a4803844a9e.png",
+    "Url": "https://www.instagram.com/p/BNvESj-j8PI/",
+    "Title": "Black Sweatshirt",
+    "Description": "Black sweatshirt hoody with the Sick of the Internet logo.",
+    "Ratings": null,
+    "price": "24"
+  },
+  {
+    "Id": "selinazawacki-soi-pins",
+    "Maker": "selinazawacki",
+    "img": "https://user-images.githubusercontent.com/41929050/61567059-142c1c80-aa33-11e9-939b-2ecf4492786d.png",
+    "Url": "https://www.instagram.com/p/BNm6hZzDoEF/",
+    "Title": "Sick of the Internet Pins",
+    "Description": "Still some time to enter the pin/sticker giveaway! ",
+    "Ratings": null,
+    "price": "8",
+  },
+  {
+    "Id": "vogueandcode-hipster-dev-bro",
+    "Maker": "vogueandcode",
+    "img": "https://user-images.githubusercontent.com/41929050/61567061-14c4b300-aa33-11e9-9fee-63ff2c0c9823.png",
+    "Url": "https://www.vogueandcode.com/shop/hipster-dev-bro",
+    "Title": "Hipster Dev",
+    "Description": "Hipster Dev is busy coding away while styled in a camo jacket and orange beanie.",
+    "Ratings": null,
+    "price": "90"
+  },
+  {
+    "Id": "vogueandcode-pretty-girls-code-tee",
+    "Maker": "vogueandcode",
+    "img": "https://user-images.githubusercontent.com/41929050/61567062-14c4b300-aa33-11e9-9dcd-8bfed4ece810.png",
+    "Url": "https://www.vogueandcode.com/shop/pretty-girls-code-tee",
+    "Title": "Pretty Girls Code Tee",
+    "Description": "Everyone\u2019s favorite design is finally here on a tee! The Pretty Girls Code crew-neck tee is available in a soft pink with red writing.",
+    "Ratings": null,
+    "price": "91"
+  },
+  {
+    "Id": "vogueandcode-ruby-sis-2",
+    "Maker": "vogueandcode",
+    "img": "https://user-images.githubusercontent.com/41929050/61567063-14c4b300-aa33-11e9-8515-bcb866da9ea3.png",
+    "Url": "https://www.vogueandcode.com/shop/ruby-sis-2",
+    "Title": "Ruby Sis",
+    "Description": "Styled in a dashiki, Ruby Sis is listening to music while coding in her favorite language, Ruby!",
+    "Ratings": null,
+    "price": "92"
+  },
+  {
+    "Id": "selinazawacki-moon",
+    "Maker": "selinazawacki",
+    "img": "https://user-images.githubusercontent.com/41929050/61567057-142c1c80-aa33-11e9-9781-9e442418eaab.png",
+    "Url": "https://www.instagram.com/p/BFktVYPinKQ/",
+    "Title": "Holographic Dark Moon Necklace",
+    "Description": "Not sure if I\u0027ll be making more, get it while I have it in the store.",
+    "Ratings": null,
+    "price": "82"
+  },
+  {
+    "Id": "selinazawacki-shirt",
+    "Maker": "selinazawacki",
+    "img": "https://user-images.githubusercontent.com/41929050/61567058-142c1c80-aa33-11e9-89fb-b4f30d84d69d.png",
+    "Url": "https://www.instagram.com/p/BEXlpiZCnJ3",
+    "Title": "Floppy Crop",
+    "Description": "Used up the Diskette fabric today to make 2 of these crops.",
+    "Ratings": null,
+    "price": "83"
   }
 ]

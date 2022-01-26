@@ -9,12 +9,15 @@ const store = createStore({
     getters:{
         getProductDetail: (state) => (id) => {
             return state.products.find(p => p.Id === id)
+        },
+        filteredProducts: () => () => {
+            //console.log(state.products.filter(p => p.Title == "Pastel"))
+            console.log("...")
         }
     },
     mutations:{
         updateCartList(state, product){
             state.cartList.push(product)
-            console.log("mutaions log");
             console.log(state.cartList);
         }
     },

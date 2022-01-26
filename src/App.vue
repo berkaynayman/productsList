@@ -1,30 +1,17 @@
 <template>
   <div class="container">
-    <ul class="nav justify-content-start bg-light">
-      <li class="nav-item bg-info">
-        <router-link class="nav-link active" aria-current="page" to="/">
-          Products
-        </router-link>
-      </li>
-      <li class="nav-item bg-info">
-        <router-link class="nav-link" to="/cart">
-          Cart
-        </router-link>
-      </li>
-    </ul>
-    
-    
+    <Navbar />
     <router-view />
-
-    <p class="text-end">End aligned text on all viewport sizes.</p>
   </div>
 </template>
 
 <script>
+import Navbar from "./components/Navbar.vue"
 
 export default {
   name: 'App',
   components: {
+    Navbar
   },
   created(){
     console.log(this.$store.state.products);

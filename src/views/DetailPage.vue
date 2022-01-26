@@ -1,5 +1,6 @@
 <script>
-import {mapGetters} from 'vuex'
+import {mapGetters, mapActions} from 'vuex'
+
 import CardDetail from '../components/CardDetail.vue'
 
 export default {
@@ -10,6 +11,10 @@ export default {
             productDetail: {},
             name: this.$store.state.name
         }
+    },methods:{
+      ...mapActions([
+        'updateCartList'
+      ])
     },
     computed:{
         ...mapGetters([
@@ -24,9 +29,7 @@ export default {
 </script>
 
 <template>
-    <div>
-        <h1>detail page</h1>
-        <h2>{{ $route.params}}</h2>
-        <CardDetail :product="getProductDetail(this.id)" :key="i" />
+    <div class="mt-5s">
+        <CardDetail :product="getProductDetail(this.id)" :updateCartList="updateCartList" :key="i" />
     </div>
 </template>
