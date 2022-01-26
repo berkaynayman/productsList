@@ -20,7 +20,8 @@
                 </li>
             </ul>
             <form class="d-flex">
-                <input class="form-control me-2" @keydown="filteredProducts" id="inputGroup-sizing-lg" placeholder="searching">
+                <!-- v-model="search" @keyup="filteredProducts(search)" -->
+                <input v-model="search" class="form-control me-2"  id="inputGroup-sizing-lg" placeholder="Search...">
             </form>
         </div>
     </div>
@@ -28,18 +29,26 @@
 </template>
 
 <script>
-import {mapGetters} from "vuex"
+import {mapActions} from "vuex"
 
 export default{
     data(){
         return{
-            search: "sd"
+            search: ""
         }
     },
-    computed:{
-        ...mapGetters([
+    watch:{
+        search(newsearch) {
+            this.filteredProducts(newsearch)
+        }
+    },
+    methods:{
+        ...mapActions([
             "filteredProducts"
-        ])
+        ]),
+        filtered: function(){
+            return console.log("search", this.search);
+        }
     }
 }
 </script>

@@ -1,10 +1,10 @@
 <template>
-    <div class="card mt-3" style="width: 25rem;">
+    <div class="card mt-5">
       <img :src="product.img" :alt="product.Id">
       <div class="card-body">
         <h5 class="card-title">{{product.Title}}</h5>
         <div class="d-flex justify-content-between w-100">
-          <a @click="updateCartList" class="btn btn-success w-50">
+          <a @click="updateCartList(this.product)" class="btn btn-success w-50">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
             class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12"
@@ -39,12 +39,14 @@ img{
   width:100%;
   height: 18rem;
   object-fit: cover;
+  border-radius: 10px;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 25rem;
   margin: auto;
   text-align: center;
-  font-family: arial;
 }
 .card-title{
     white-space: nowrap; 

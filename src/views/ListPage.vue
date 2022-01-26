@@ -1,6 +1,6 @@
 <template>
     <div class="cards">
-        <Card v-for="product in $store.state.products"
+        <Card v-for="product in $store.state.productsList"
             :key="product.Id"
             :product="product"
             :updateCartList="updateCartList"

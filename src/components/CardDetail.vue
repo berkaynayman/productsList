@@ -20,7 +20,7 @@ export default {
         <h1>{{product.Title}}</h1>
         <p>{{product.Description}}</p>
         <p class="display-6">${{product.price}}</p>
-        <a @click="updateCartList" class="btn btn-success btn-lg">Ekle</a>
+        <a @click="updateCartList(this.product)" class="btn btn-success btn-lg">Ekle</a>
       </div>
     </div>
 </template>

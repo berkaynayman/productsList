@@ -11,7 +11,8 @@ export default {
             productDetail: {},
             name: this.$store.state.name
         }
-    },methods:{
+    },
+    methods:{
       ...mapActions([
         'updateCartList'
       ])
